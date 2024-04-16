@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnica InSAR para el monitoreo de volcanes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>Técnica InSAR para el monitoreo de volcanes</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1">Misión satelital Sentinel 1</a></li>
+                <li><a href="https://www.usgs.gov/centers/land-subsidence-in-california/science/interferometric-synthetic-aperture-radar-insar">InSAR</a></li>
+            </ul>
+        </nav>
+
+        <div class="separador"></div>
+        <section id="contenido">
+            <article class="articulo">
+                <h2>1. Sistemas de RADAR</h2>
+                <p>El RADAR de apertura sintética (SAR, por sus siglas en inglés) es una tecnología de detección remota transportado sobre un avión o sobre la plataforma de un satélite, que posee un gran potencial para estudiar deformaciones del terreno, cubriendo áreas muy extensas. Los radares miden directamente el cambio de fase entre dos observaciones tomadas de posiciones de sensor ligeramente diferentes que extrae información de un mismo píxel de la superficie de la Tierra (ESA, 2017).</p>
+                <p>Los sistemas de RADAR son sistemas de teledetección activos, es decir, que emiten y reciben su propia fuente de energía, lo cual es ventajoso ya que permiten medir bajo cualquier condición atmosférica, tanto de día como de noche. Los radares transmiten radiación en el rango de los microondas del espectro electromagnético (longitudes de onda de entre 0,1 y 100 cm); el uso de señales de microondas para estas aplicaciones hace al sistema SAR resistente a perturbaciones meteorológicas, tales como nubes, tormentas e incluso nieve, siendo capaz de atravesarlas y funcionar a pesar de su presencia (García, 2011).</p>  
+                <p>En la técnica InSAR es muy importante la banda utilizada por el radar, ya que determina la capacidad de penetración de la onda sobre los diferentes objetos con los que se encuentra, por lo que, a mayor longitud de onda, mayor es la capacidad de atravesar objetos. Las longitudes de onda más utilizadas por los radares son las bandas X, C y L, con longitudes de onda λ = 3, λ = 6 y λ = 25 cm respectivamente (Pearse, 2016).</p>
+                <p>Si se analiza una zona con vegetación se encuentra con la situación que muestra la <em>Figura 1</em>, donde una banda X rebota por lo general en la vegetación, una banda C rebota en la vegetación y parcialmente en el suelo, y una banda L rebota mayoritariamente en el suelo (Jover, 2016).</p> 
+                <img src="RADAR.jpg" alt="Figura 1">
+                <p><strong>Figura 1. Capacidad de penetración de las ondas de radar</strong></p>
+                <p>Fuente:<a href="https://www.slideshare.net/GailMillinChalabi/rsp-soc-fires2011final">Millin, 2013</a></p>
+                <p>También, el sistema SAR es un sistema de tipo coherente, porque conserva tanto la amplitud como la fase de las señales recibidas. La amplitud de una imagen proporciona información sobre la potencia de la señal reflejada por el terreno, por otra parte, la fase de la imagen es el punto de oscilación de la onda armónica electromagnética debida a la radiación de la antena SAR y está íntimamente ligada al tiempo doble de viaje, es decir, al recorrido antena-terreno-antena (Hermosilla, 2016).</p>  
+                <h2>2. Imágenes SAR</h2>
+                <p>Una imagen de deformación se deriva de las componentes de fase entre dos imágenes SAR superpuestas. Debido a que los sensores SAR poseen un ángulo de visión lateral, las imágenes de deformación representan desplazamientos en la dirección de la línea de vista, que incluye componentes verticales y horizontales (Hermosilla, 2016). Las misiones satelitales SAR que proveen imágenes enfocadas a estudiar las deformaciones de la superficie son mucho más sensibles a desplazamientos verticales (levantamientos o subsidencias) que a los desplazamientos horizontales (Lu & Dzurisin, 2014).</p>
+                <p>Hermosilla (2016) comenta que en un interferograma la deformación superficial casi siempre es visualizada como un mapa con colores (ver <em>Figura 2</em>). En la mayoría de los casos los colores por sí mismos no representan nada, pero los cambios entre ellos son los que representan el cambio de fase relativo a deformación. Es imprescindible para la interpretación de un interferograma de deformación, observar la progresión de los colores para poder determinar si el movimiento es ascendente o descendente. También, es posible inferir que la superficie en donde la deformación es más agresiva estará representada por una mayor concentración de franjas, mientras que aquellas superficies cuya área esté representada por colores uniformes indican que no hubo cambios relativos en la dirección de alcance (Dzurisin, 2007).</p>
+                <img src="Interferograma.jpg" alt="Figura 2">
+                <p><strong>Figura 2. Interferograma</strong></p>
+                <p>Fuente:<a href="https://volcanofoundation.org/es/creando-conocimiento-de-los-riesgos/monitorizacion/deformacion/insar/">Volcano Active Foundation, 2024</a></p>
+                </article>
+            <article class="articulo">
+                <h2><em>3. Referencias</em></h2>
+<ul>
+    <li>Dzurisin, D. (2007). Volcano Deformation. Chichester, UK: Praxis Publishing Ltda.</a></li>
+    <li>ESA (2024). Sentinel-1. Recuperado de: https://sentinel.esa.int/web/sentinel/missions/sentinel-1.</a></li>
+    <li>García, A. (2011). Procesado DInSAR a alta resolucion con imagenes con diferencias de Doppler grandes. Recuperado de: https://upcommons.upc.edu/bitstream/handle/2099.1/13068/PFC_-_DInSAR_Dopplers_grans.pdf?sequence=1&isAllowed=y</a></li>
+    <li>Hermosilla, D. (2016). Interferometría Radar de Apertura Sintética (InSAR) aplicada al estudio del movimiento en laderas aledañas al volcan calbuco con ayuda de imágenes sentinel-1A. Recuperado de: https://repositorio.usm.cl/bitstream/handle/11673/22701/3560902048871UTFSM.pdf?sequence=1&isAllowed=y</a></li>
+    <li>Jover, R. (2016). Monitorización y caracterización de macizos rocosos mediante técnicas remotas: láser escáner, fotogrametría e interferometría SAR. Recuperado de: http://docplayer.es/42971768-Jornada-tecnica-semr-2016.html</a></li>
+    <li>Pearse, J. (2017). Explorando la Tierra desde el espacio usando la interferometría de radar. Recuperado de: http://slideplayer.es/slide/12259355/</a></li>
+</ul>
+</article>
+        </section>
+        
+        <aside>
+            <h2>Barra Búsqueda</h2>  
+                    <form>             
+                         <input type="text">             
+                        <input type="submit" value="Buscar">     
+                    </form>
+        </aside>
+
+        <div class="separador"></div>
+        <footer>Realizado por: Daniela Ovares Fernández</footer>
+    </div>
+</body>
+</html>
+
+

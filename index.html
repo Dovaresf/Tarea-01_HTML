@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelación de deformaciones volcánicas</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <h1>Modelación de deformaciones volcánicas</h1>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="https://www.tierraymar.una.ac.cr/index.php/vigilancia-volcanica">Vigilancia volcánica</a></li>
+                <li><a href="https://portal.ucol.mx/cueiv/Deformacion.htm">Monitoreo de deformaciones</a></li>
+                <li><a href="https://digital.csic.es/bitstream/10261/190876/1/MODELIZACI%C3%93N%20DE%20DEFORMACIONES%20VOLC%C3%81NICASLumbrerasGerma.pdf">Modelado de deformaciones</a></li>
+            </ul>
+        </nav>
+
+        <div class="separador"></div>
+        <section id="contenido">
+            <article class="articulo">
+                <h2>1. Deformación volcánica</h2>
+                <p>El monitoreo de la deformación volcánica es una de las herramientas más importantes para estudiar la actividad asociada a volcanes activos, ya que permite cuantificar información muy útil sobre lo que está ocurriendo en el interior del edificio volcánico. El cálculo de los desplazamientos de la estructura volcánica ayuda a comprender los movimientos de magma ocurridos bajo la superficie y además, apoyan otras observaciones (sismicidad, análisis de gases, entre otros), con el fin de reforzar el conocimiento de los mecanismos responsables de las deformaciones registradas y de este modo, mejorar en la evaluación del riesgo asociado a la actividad volcánica (Córdova et al., 2015).</p>
+                <p>La deformación de la superficie volcánica puede ser causada, entre otras razones, por el movimiento del magma, redistribución de cuerpos de agua, desgasificaciones o por variaciones de presión interna. Cuando el magma asciende hacia la superficie ocurre el fenómeno llamado inflación, y cuando la presión magmática es liberada, el volcán tiende a regresar a su posición inicial mediante el proceso de deflación. El inicio y culminación de estos eventos es casi incierto, ya que puede prolongarse por días o años y llevándose a cabo de forma rápida o gradual.</p>  
+                <h2>2. Modelo de Mogi</h2>
+                <p>El trabajo del científico japonés Kiyoo Mogi, publicado en 1958, fue el primero de muchas soluciones analíticas para estudios de deformaciones en volcanes.</p>
+                <p>El modelo de deformación volcánica de Mogi considera una fuente puntual a cierta profundidad sometido a una presión en un medio elástico homogéneo de espacio medio. En este caso se considera un cuerpo esférico de radio "a" con una profundidad "d", tal como se muestra en la <em>Figura 1</em> (Angarita, 2017).</p>
+                <img src="Geometría.jpg" alt="Figura 1">
+                <p><strong>Figura 1. Geometría cámara magmática esférica</strong></p>
+                <p>Fuente:<a href="https://repositorio.unal.edu.co/handle/unal/59318?locale-attribute=en">Angarita, 2017</a></p>
+                <h3>2.1. Características del medio</h3>
+                <p>La corteza de la Tierra es un cuerpo plano, elástico y semi-infinito debido a que durante la erupción volcánica la corteza parece seguir este tipo de comportamiento para el caso de las deformaciones de largo periodo.</p>
+                <p>La deformación de la corteza es causada por una fuente esférica de presión hidrostática que es provocada por el magma al ser un fluido incomprensible en estado líquido, ya que este modelo tiene una aproximación muy parecida a la forma de un reservorio volcánico (cámara magmática).</p>
+                <h3>2.2. Particularidades</h3
+                <p>La profundidad debe ser un valor positivo, invirtiendo la dirección del eje z.</p>
+                <p>La profundidad del reservorio es mayor que el radio de este mismo.</p>
+                <p>En la <em>Figura 2</em> se muestra el esquema de la deformación generada por el modelo de Mogi, dónde las flechas de color celeste representan el desplazamiento en dirección de los ejes horizontales sobre la superficie, las flechas de color rojo representan el desplazamiento vertical en la superficie y las flechas negras representan el desplazamiento resultante de la superficie.</p>
+                <img src="Esquema.jpg" alt="Figura 2">
+                <p><strong>Figura 2. Esquema de la deformación generada por el modelo de Mogi</strong></p>
+                <p>Fuente:<a href="https://www.researchgate.net/publication/321610248_Volcano_Deformation_Geodetic_Monitoring_Techniques">Dzurisin, 2007</a></p>
+                <p>Según Mogi (1958) su modelo permitiría obtener una guía teórica acerca de donde se esperarían las mayores deformaciones para luego poderlas comparar con los resultados obtenidos de las mediciones de campo.</p>
+                <p>Sin embargo, el modelo teórico de Mogi no toma en cuenta la falta de homogeneidad de la corteza, por lo que los resultados de este modelo se aceptan únicamente como aproximaciones, ya que no siempre se obtienen los valores esperados con respecto a las mediciones de campo.</p>
+            </article>
+            <article class="articulo">
+                <h2><em>3. Referencias</em></h2>
+<ul>
+    <li>Angarita, M. (2016). Procesos de deformacion en la region de los volcanes Chiles-Cerro Negro por medio de imágenes InSAR. Recuperado de: https://repositorio.unal.edu.co/handle/unal/59318?locale-attribute=en</a></li>
+    <li>Dzurisin, D. (2007). Volcano Deformation: Geodetic Monitoring Techniques. Chichester, UK: Praxis Publishing Ltda.</a></li>
+    <li>Córdova L.; Alarcón A.; Mardones C; Cardona C; Gil F; Rojas G.; Quijada J.; Le Mevel H.; Feigl K.; De Mets C. y Lundgren P. (2015). Monitoreo de la deformación en volcanes chilenos mediante técnica GPS, resultados asociados a la actividad de los volcanes Laguna del Maule, Copahue y Villarrica. Recuperado de: https://catalogobiblioteca.sernageomin.cl/Archivos/14905_v3_pp_233_236.pdf</a></li>
+    <li>Mogi, K. (1958). Relations between the eruptions of various volcanoes and the deformations of the ground surfaces around them. Recuperado de:https://radar.community.uaf.edu/wp-content/uploads/sites/667/2017/04/Mogi1958.pdf</a></li>
+    
+</ul>
+</article>
+        </section>
+        
+        <aside>
+            <h2>Barra Búsqueda</h2>  
+                    <form>             
+                         <input type="text">             
+                        <input type="submit" value="Buscar">     
+                    </form>
+        </aside>
+
+        <div class="separador"></div>
+        <footer>Realizado por: Daniela Ovares Fernández</footer>
+    </div>
+</body>
+</html>
+
+
